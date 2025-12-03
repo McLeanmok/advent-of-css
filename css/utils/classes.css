@@ -19,6 +19,10 @@
 /* Custom Classes  */
 @layer custom-classes {
   /* Add your custom classes here */
+  .section-intro {
+    display: grid;
+    gap: var(--content-gap);
+  }
 }
 /* Champ Classes */
 @layer champ-classes {

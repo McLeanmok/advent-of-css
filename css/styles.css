@@ -1,0 +1,27 @@
+.gallery-card {
+  /* Varibles */
+  --card-padding: var(--sp-200);
+  --card-bg: var(--surface-900);
+  --card-min: 150px;
+  --card-gap: 0.55rem;
+
+  /* styles */
+  display: inline-block;
+  width: auto;
+  height: auto;
+  align-self: flex-start;
+  background-color: var(--card-bg);
+  padding: var(--card-bg);
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--card-min), 100%), 1fr));
+  grid-template-rows: 1fr;
+  gap: var(--card-gap);
+  grid-auto-flow: dense;
+}
+
+.gallery-card__media {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  width: 100%;
+}

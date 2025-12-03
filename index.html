@@ -3,17 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChampCSS </title>
+    <title>Advent of CSS - December 1st: Gallery Cards </title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>ChampCSS Lab</h1>
+            <h1>Advent of CSS - December 1st: Gallery Cards </h1>
         </div>
     </header>
     <main>
-        
+        <section class="standard grid-stack">
+            <div class="container page-intro">
+                <h2>Standard Lab</h2>
+                <p>Get the basics working</p>
+            </div> <!-- End of intro -->
+            <!-- Card grid -->
+            <div class="container card-grid grid-3">
+                <!-- single gallery card -->
+                <article class="gallery-card">
+                        <img src="media/annie-spratt-zh7GEuORbUw-unsplash.jpg" alt="" class="gallery-card__media">
+                        <img src="media/erwan-hesry-e9jV1ZyrOmg-unsplash.jpg" alt="" class="gallery-card__media">
+                        <img src="media/erwan-hesry-e9jV1ZyrOmg-unsplash.jpg" alt="" class="gallery-card__media">
+                 </article>
+                 <!-- end of gallery card -->
+                <article class="gallery-card">
+                        <img src="media/annie-spratt-zh7GEuORbUw-unsplash.jpg" alt="" class="gallery-card__media">
+                 </article>
+                 <!-- end of gallery card -->
+                <article class="gallery-card">
+                        <img src="media/annie-spratt-zh7GEuORbUw-unsplash.jpg" alt="" class="gallery-card__media">
+                 </article>
+                 <!-- end of gallery card -->
+            </div>
+        </section>
     </main>
 </body>
 </html>
