@@ -1,0 +1,80 @@
+/* Tall section */
+.tall-section {
+  /* Variables */
+  --tall-section-bg: var(--primary-200);
+  --tall-section-color: var(--white);
+  --tall-section-padding: calc(var(--section-padding-md) * 2);
+  /* Code */
+  padding: var(--tall-section-padding);
+  background: var(--tall-section-bg);
+  color: var(--tall-section-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    text-align: center;
+    flex: 1;
+  }
+  text-align: center;
+}
+
+/* scroll indicator */
+.indicator {
+  /* Variables  */
+  --indicator-bg: var(--primary-600);
+  --indicator-height: 8px;
+
+  /* Code */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  block-size: var(--indicator-height);
+  background: var(--indicator-bg);
+  z-index: 999;
+  animation: indicate forwards linear;
+  animation-timeline: scroll(y);
+}
+
+@keyframes indicate {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+/* advanced lab */
+.post {
+  padding: var(--section-padding-xl);
+}
+.post-banner {
+  --tall-section-bg: var(--surface-900);
+  --tall-section-color: var(--black);
+}
+
+.post__content {
+  border-radius: var(--radius-md);
+  background: var(--surface-800);
+  padding: var(--section-padding-md);
+  display: grid;
+  gap: var(--content-gap);
+  @media (width > 730) {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* footer */
+.site-footer {
+  padding: var(--section-padding-md);
+  background-color: var(--surface-200);
+  color: var(--white);
+
+  @media (width > 730) {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
