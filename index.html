@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advent of CSS - [date] [lab-title]</title>
+    <title>Advent of CSS - December 7th: Floating Labels</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Advent of CSS - [date] [lab-title]</h1>
-        </div>
+            <h1>Advent of CSS - December 7th: Floating Labels</h1>
+        </div> 
     </header>
     <main>
         <section class="standard grid-stack">
@@ -18,8 +18,40 @@
                 <h2>Standard Lab</h2>
                 <p>Get the basics working</p>
             </div> <!-- End of intro -->
-            <!-- Start lab here-->
+            <div class="container">
+                <form class="site-form">
+               <div class="floating-label">
+                     <input type="email" name="email" id="email" class="site-form__input" placeholder=" " required>
+                     <label for="email" class="site-form__label">Email address </label>
+               </div>
+                </form>
+            </div>
         </section>
+        <!-- Advanced lab - use in a real world scenario  -->
+         <section class="waitlist">
+            <div class="container waitlist__inner">
+                <div class="waitlist__intro">
+                    <h2 class="waitlist__heading">Sign up For Early Access to My Web Builders Course</h2>
+                    <p class="waitlist__lede">Learned CSS, but you don't know how to apply those skills? This course is a complete website build, where we produce a 5 page website. Not only will you get to apply your HTML, and CSS knowledge, but you'll also pick up some advanced skills like how to make the most of era-4 CSS techniques, and how to make use of the astro meta framework. If you sign up for the wait list, you'll get access to the entire class for free, plus all the course bounus content.</p>
+                </div>
+                <form action="" class="waitlist__form">
+                    <div class="floating-label">
+                        <input type="email" name="email" id="email" class="site-form__input" placeholder=" " required>
+                        <label for="email" class="site-form__label">Email address </label>
+                    </div>
+                    <div class="floating-label">
+                        <input type="name" name="name" id="name" class="site-form__input" placeholder=" " required>
+                        <label for="name" class="site-form__label">First Name  </label>
+                    </div>
+                    <button class="waitlist-form__submit standard-btn">Sign Up Now</button>
+                </form>
+            </div>
+         </section>
     </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>Valid HTML5 & CSS3</p>
+        </div>
+    </footer>
 </body>
 </html>
