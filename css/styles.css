@@ -1,0 +1,43 @@
+/* Standard styles */
+.testimonial {
+  /* Variables */
+  --testmonial-card-max-width: 27.5rem;
+  /* Code */
+  display: flex;
+  gap: var(--sp-100);
+  max-inline-size: var(--testmonial-card-max-width);
+}
+
+.testimonial__content-wrapper {
+  display: grid;
+  gap: var(--content-gap);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -90%;
+    left: 67.9px;
+    
+    inline-size: 50px;
+    height: 50px;
+    background-image: url("../images/open-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.2;
+    z-index: -1;
+  }
+}
+.testimonial__avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50vw;
+  height: auto;
+}
+/* Testimonial set 1 */
+.testimonial-grid-1 {
+  --grid-gap: var(--sp-200);
+  display: grid;
+  gap: var(--grid-gap);
+}
