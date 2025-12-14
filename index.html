@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advent of CSS - [date] [lab-title]</title>
+    <title>Advent of CSS - December 13th: 3-State Toggle</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Advent of CSS - [date] [lab-title]</h1>
+            <h1>Advent of CSS - December 13th: 3-State Toggle</h1>
         </div>
     </header>
     <main>
@@ -18,7 +18,30 @@
                 <h2>Standard Lab</h2>
                 <p>Get the basics working</p>
             </div> <!-- End of intro -->
-            <!-- Start lab here-->
+            <div class="container">
+                <article class="three-state">
+                    <div class="three-state__item">
+                        <input type="checkbox" id="calendar" class="three-state__toggle-input">
+                        <label for="calendar" class="three-state__toggle-label">
+                            <img class="three-state__icon" src="media/calendar.svg" alt="">
+                        </label>
+                         
+                    </div> <!-- End of item -->
+                    <div class="three-state__item">
+                        <input type="checkbox" id="form" class="three-state__toggle-input">
+                        <label for="form" class="three-state__toggle-label">
+                            <img class="three-state__icon" src="media/form.svg" alt="">
+                        </label>
+                    </div> <!-- End of item -->
+                    <div class="three-state__item">
+                        <input type="checkbox" id="user" class="three-state__toggle-input">
+                        <label for="user" class="three-state__toggle-label">
+                            <img class="three-state__icon" src="media/user.svg" alt="">
+                        </label>
+                        
+                    </div> <!-- End of item -->
+                </article> <!-- End of toggle -->
+            </div>
         </section>
     </main>
 </body>

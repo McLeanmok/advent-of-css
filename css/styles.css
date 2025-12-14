@@ -1,0 +1,30 @@
+.three-state {
+    display: flex;
+}
+.three-state__item {
+    display: grid;
+    cursor: pointer;
+    place-items: center;
+    padding: 1rem;
+    background: var(--surface-800);
+
+
+}
+.three-state__item:has(input:checked) {
+    background-color: var(--white);
+}
+.three-state__item:has(input:indeterminate) {
+    background-color: var(--primary-500);
+}
+.three-state__toggle-input {
+    appearance: none;
+}
+
+.three-state__toggle-input:checked + .three-state__item{
+  background-color: var(--white);
+}
+.three-state__icon {
+    width: 2rem;
+    height: 2rem;
+}
+.three-state__toggle-label {}
