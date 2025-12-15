@@ -1,0 +1,79 @@
+/* False Card */
+.false-card {
+  background: var(--surface-900);
+  inline-size: 29rem;
+  block-size: 19rem;
+  border-radius: var(--site-radius);
+  overflow: clip;
+}
+
+/* Ribbon */
+.ribbon {
+  /* Mini framework  */
+  --ribbon-bg: var(--secondary-500);
+  --ribbon-color: var(--secondary-900);
+  --ribbon-padding-block: 0.25rem;
+  --ribbon-padding-inline: 1.5rem;
+  --ribbon-padding: var(--ribbon-padding-block) var(--ribbon-padding-inline);
+  --ribbon-font-weight: 700;
+  --ribbon-rotation: 45deg;
+
+  /* styles */
+  position: absolute;
+  top: 5%;
+  right: -3%;
+
+  max-inline-size: 10ch;
+  background-color: var(--ribbon-bg);
+  padding: var(--ribbon-padding);
+  color: var(--ribbon-color);
+  font-weight: var(--ribbon-font-weight);
+  transform: rotate(var(--ribbon-rotation));
+  text-align: center;
+  z-index: 1; /* Has me */
+  :has(> &) {
+    position: relative;
+    overflow: clip;
+  }
+}
+
+/* Advanced lab  */
+
+/* Grid work */
+.course-grid {
+  display: grid;
+  gap: var(--grid-gap);
+  grid-template-columns: var(--grid-3);
+
+}
+/* Card styles */
+.course-card {
+    display: grid;
+    gap: 0;
+  padding: 0;
+  position: relative;
+}
+/* Element styles */
+.course-card__media-wrapper {
+  z-index: 5;
+}
+.course-card__content-wrapper {
+  padding: var(--primary-card__padding);
+    background: var(--surface-900);
+    display: grid;
+    gap: var(--card-gap);
+    place-items: flex-start;
+    z-index: 1;
+}
+.course-card__heading, .course-card__body {
+  z-index: 6;
+}
+.course-card__cta::before {
+    content: "";
+    display: block;
+    background-color: var(--primary-900__trans-900);
+    z-index: -2;
+    position: absolute;
+    inset: 0
+  
+}
