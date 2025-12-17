@@ -1,0 +1,46 @@
+.highlight-heading {
+  /* Variable */
+  --highlight-heading-color: oklch(89.598% 0.15256 196.882);
+  --highlight-heading-height: 25px;
+  --highlight-text-transition-duration: 0.3s;
+  --highlight-text-timing-function: ease;
+
+  position: relative;
+  display: grid;
+  place-items: flex-start;
+}
+.highlight-heading::before {
+  position: absolute;
+  content: "";
+  display: grid;
+  place-self: center;
+  bottom: 5px;
+  width: 100%;
+  z-index: -1;
+  height: var(--highlight-heading-height);
+  background-color: var(--highlight-heading-color);
+  transform: translateY(calc(-var(--highlight-heading-height) * 2));
+  transition: height var(--highlight-text-transition-duration)
+    var(--highlight-text-timing-function);
+}
+.highlight-heading:hover::after {
+  height: 100%;
+}
+
+/* Advanced lab - use in a real world scenario */
+.post__inner {
+  display: flex;
+  gap: var(--content-gap);
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+@media (width < 768px) {
+  .post__title {
+    position: sticky;
+    top: 1rem;
+  }
+  .post__inner {
+    flex-direction: column;
+  }
+}

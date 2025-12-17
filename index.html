@@ -1,25 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advent of CSS - [date] [lab-title]</title>
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advent of CSS - December 15th: Highlight Text</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <h1>Advent of CSS - [date] [lab-title]</h1>
-        </div>
+      <div class="container">
+        <h1>Advent of CSS - December 15th: Highlight Text</h1>
+      </div>
     </header>
     <main>
-        <section class="standard grid-stack">
-            <div class="container page-intro">
-                <h2>Standard Lab</h2>
-                <p>Get the basics working</p>
-            </div> <!-- End of intro -->
-            <!-- Start lab here-->
-        </section>
+      <section class="standard grid-stack">
+        <div class="container page-intro">
+          <h2>Standard Lab</h2>
+          <p>Get the basics working</p>
+        </div>
+        <!-- End of intro -->
+        <div class="container">
+          <h2 class="highlight-heading">I'm a highlighted heading</h2>
+        </div>
+      </section>
+
+      <!-- Advanced lab - use in a real world scenario -->
+      <section class="post">
+        <div class="container post__inner">
+          <h2 class="highlight-heading post__title">
+            Why CSS Variables are Required in Modern Web Development
+          </h2>
+          <article class="post-content">
+            <p>
+              CSS Variables, also known as Custom Properties, have
+              revolutionized the way we write and manage CSS in modern web
+              development. They allow developers to define reusable values that
+              can be easily updated and maintained throughout a stylesheet.
+            </p>
+            <p>they are a powerful tool that empower developers to manage and customize CSS styles effectively, leading to more maintainable and scalable code. They are a must-have for any modern web application. have revolutionized the way we write and manage CSS in modern web development.</p>
+            <p>
+              One of the primary benefits of using CSS Variables is their
+              ability to enhance maintainability. By defining a variable for
+              commonly used values such as colors, fonts, or spacing, developers
+              can make global changes by simply updating the variable's value.
+              This reduces redundancy and minimizes the risk of inconsistencies
+              across a project.
+            </p>
+            <p>
+              Additionally, CSS Variables support dynamic theming. Developers
+              can create themes by changing variable values based on user
+              preferences or system settings, allowing for a more personalized
+              user experience without the need for extensive CSS overrides.
+            </p>
+            <p>
+              Furthermore, CSS Variables can be scoped to specific elements or
+              components, providing greater control over styling. This scoping
+              capability enables developers to create modular and reusable
+              components that can adapt to different contexts without affecting
+              the global styles.
+            </p>
+            <p>
+              In summary, CSS Variables are a powerful tool that empower
+              developers to manage and customize CSS styles effectively, leading
+              to more maintainable and scalable code. They are a must-have for
+              any modern web application. your project. w
+            </p>
+            <p>
+              In conclusion, CSS Variables are an essential tool in modern web
+              development. They improve maintainability, enable dynamic theming,
+              and offer scoped styling options that enhance the overall
+              development process. Embracing CSS Variables is crucial for
+              building scalable and efficient web applications.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
