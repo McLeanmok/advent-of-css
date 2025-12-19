@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advent of CSS - [date] [lab-title]</title>
+    <title>Advent of CSS - December 16th: Optin Form</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Advent of CSS - [date] [lab-title]</h1>
+            <h1>Advent of CSS - December 16th: Optin Form</h1>
         </div>
     </header>
     <main>
@@ -18,7 +18,25 @@
                 <h2>Standard Lab</h2>
                 <p>Get the basics working</p>
             </div> <!-- End of intro -->
-            <!-- Start lab here-->
+            <div class="container optin-form__inner">
+                <h3 class="optin-form__title">Sign up for Early Access For my Web Builders Course</h3>
+                <form  class="optin-form">
+                    <div class="optin-form__group">
+                        <label for="optin-first-name" class="optin-form__label">First Name</label>
+                        <input type="text" id="optin-first-name" class="optin-form__input">
+                    </div>
+                    <div class="optin-form__group">
+                        <label for="optin-last-name" class="optin-form__label">Last Name</label>
+                        <input type="text" id="optin-last-name" class="optin-form__input" >
+                    </div>
+
+                    <div class="optin-form__group">
+                        <label for="optin-email" class="optin-form__label">Email</label>
+                        <input type="email" id="optin-email" class="optin-form__input">
+                    </div>
+                    <button type="submit" class="standard-btn">Sign Up</button>
+                </form>
+            </div>
         </section>
     </main>
 </body>

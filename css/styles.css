@@ -1,0 +1,71 @@
+/* Styles for the optin form */
+
+/* Element styles */
+.optin-form__inner {
+  display: grid;
+  gap: calc(var(--container-gap) * 2);
+}
+/* Form styles */
+.optin-form {
+  /* Variables */
+  --input-border-width: 6px;
+  --input-border-color: var(--black);
+  --input-border-style: solid;
+  --input-border: var(--input-border-width) var(--input-border-style)
+    var(--input-border-color);
+
+  --bracket-position: -1.5rem;
+  --bracket-color: oklab(88.656% -0.14253 -0.04914);
+  display: grid;
+  gap: var(--gap-sm);
+
+  position: relative;
+
+  /* Psedo element for the bracket decorations  */
+  &::before {
+    content: "";
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    top: var(--bracket-position);
+    bottom: -2;
+    left: var(--bracket-position);
+    display: block;
+    background: var(--bracket-color);
+    z-index: -1;
+  }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        top: var(--bracket-position);
+        bottom: -2;
+        right: var(--bracket-position);
+        display: block;
+        background: var(--bracket-color);
+        z-index: -1;
+    }
+}
+
+.optin-form__group {
+  border: var(--input-border);
+  display: grid;
+  align-items: center;
+  gap: var(--content-gap);
+  grid-template-columns: var(--grid-2);
+  padding: var(--sp-100);
+  background-color: var(--white);
+}
+
+.optin-form__label {
+  font-size: var(--fs-h5);
+  text-transform: uppercase;
+}
+.optin-form__input {
+  border: none;
+  font-size: var(--input-font-size);
+  padding: var(--input-padding);
+  background-color: transparent;
+}
